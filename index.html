@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+          rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
 </head>
 <body>
 
-  Get insights that help your business grow.
+<article class="card">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <div class="card__main-content">
+        <div class="card__header">
+            <h1 class="card__header-text">Get <span class="card__header-text--accent">insights</span> that help your
+                business grow.</h1>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <p class="card__text">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.
+        </p>
+
+        <section class="card__stats-container">
+            <article class="stats">
+                <p class="stats__value">10k+</p>
+                <p class="stats__label">companies</p>
+            </article>
+
+            <article class="stats">
+                <p class="stats__value">314</p>
+                <p class="stats__label">templates</p>
+            </article>
+
+            <article class="stats">
+                <p class="stats__value">12M+</p>
+                <p class="stats__label">queries</p>
+            </article>
+        </section>
+    </div>
+
+
+    <div class="card__image">
+        <picture>
+            <source media="(min-width: 600px)" srcset="./images/image-header-desktop.jpg">
+            <img src="./images/image-header-mobile.jpg" alt="Some image">
+        </picture>
+        <div class="card__image-filter"></div>
+    </div>
+
+</article>
 </body>
 </html>
